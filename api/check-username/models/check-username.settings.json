@@ -1,0 +1,18 @@
+{
+  "kind": "collectionType",
+  "collectionName": "check_usernames",
+  "info": {
+    "name": "checkUsername"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Username": {
+      "type": "string"
+    }
+  }
+}

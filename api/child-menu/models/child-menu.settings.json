@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "child_menus",
+  "info": {
+    "name": "childMenu"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "parent_menu": {
+      "model": "parent-menu",
+      "via": "child_menus"
+    },
+    "users": {
+      "via": "child_menu",
+      "plugin": "users-permissions",
+      "collection": "user"
+    }
+  }
+}
